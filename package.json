@@ -1,5 +1,5 @@
 {
-  "name": "practica3",
+  "name": "estudiar-las-rutas-en-expressjs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,8 +7,20 @@
     "doc": "doc"
   },
   "scripts": {
+    "generar-gitbook": "node scripts/gitbook.js",
+    "push-to-gh": "node scripts/gh.js",
+    "deploy-gitbook-ghp": "node scripts/deploy_gitbook_ghp.js",
+    "deploy-gitbook-gb": "node scripts/deploy_gitbook_gb.js",
+    "build": "npm install && npm i gitbook-cli && npm run generar-gitbook",
+    "deploy": "npm run build && npm run deploy-gitbook-ghp && npm run deploy-gitbook-gb",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "",
+    "urlgb": "",
+    "name": "estudiar las rutas en expressjs"
+  },
+  "author": "Alberto G Ruiz Pérez, Diego Álvarez Padrón",
   "license": "ISC"
 }
