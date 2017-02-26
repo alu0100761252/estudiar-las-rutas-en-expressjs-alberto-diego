@@ -17,8 +17,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "",
-    "urlgb": "",
+    "url": "git@github.com:ULL-ESIT-DSI-1617/estudiar-las-rutas-en-expressjs-alberto-diego.git",
+    "urlgb": "https://git.gitbook.com/alu0100825510/estudiar-las-rutas-en-express-js.git",
     "name": "estudiar las rutas en expressjs"
   },
   "author": "Alberto G Ruiz Pérez, Diego Álvarez Padrón",
