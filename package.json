@@ -1,5 +1,5 @@
 {
-  "name": "estudiar-las-rutas-en-expressjs",
+  "name": "estudiar-las-rutas-en-expressjs-alberto-diego",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,6 +11,8 @@
     "push-to-gh": "node scripts/gh.js",
     "deploy-gitbook-ghp": "node scripts/deploy_gitbook_ghp.js",
     "deploy-gitbook-gb": "node scripts/deploy_gitbook_gb.js",
+    "server-express": "node scripts/server.js",
+    "deploy-iaas": "cd scripts && node iaas2.js",
     "build": "npm install && npm i gitbook-cli && npm run generar-gitbook",
     "deploy": "npm run build && npm run deploy-gitbook-ghp && npm run deploy-gitbook-gb",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,7 +21,12 @@
     "type": "git",
     "url": "git@github.com:ULL-ESIT-DSI-1617/estudiar-las-rutas-en-expressjs-alberto-diego.git",
     "urlgb": "https://git.gitbook.com/alu0100825510/estudiar-las-rutas-en-express-js.git",
-    "name": "estudiar las rutas en expressjs"
+    "name": "estudiar-las-rutas-en-expressjs-alberto-diego"
+  },
+  "ssh": {
+    "host": "10.6.129.237",
+    "user": "usuario",
+    "port": "8085"
   },
   "author": "Alberto G Ruiz Pérez, Diego Álvarez Padrón",
   "license": "ISC"
