@@ -1,19 +1,10 @@
-console.log("Commit and push to gitbook master");
+var path = require('path');
+var repo = require('../package.json').repository.urlgb;
+var simpleGit = require('simple-git')(path.resolve('doc'));
+var fsp = require('fs-promise');
 
-const readline = require('readline');
+	fsp.remove(path.resolve('doc/.git'));
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
+	simpleGit.init().add('./*')
+         .commit('deploy to gitbook').addRemote('origin', repo).push('--force','origin', 'master:master');
 
-
-rl.question('Introduzca el mensaje representativo del commit ', (answer) => {
-  
-  var simpleGit = require('simple-git')();
-	simpleGit.add('.')
-         .commit(answer).push('gitbook', 'master');
-
-  console.log('commited!');
-  rl.close();
-});

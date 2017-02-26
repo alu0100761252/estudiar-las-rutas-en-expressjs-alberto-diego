@@ -4,4 +4,4 @@ function puts(error, stdout, stderr) {
 console.log("Ejecución de Gitbook build");
 console.log(stdout); }
 
-exec("gitbook build ./txt ./gh-pages", puts);
+exec("gitbook build ./doc ./gh-pages", puts);
