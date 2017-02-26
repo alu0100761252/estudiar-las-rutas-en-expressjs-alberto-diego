@@ -29,5 +29,8 @@
     "port": "8085"
   },
   "author": "Alberto G Ruiz Pérez, Diego Álvarez Padrón",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "ssh-exec": "^2.0.0"
+  }
 }
